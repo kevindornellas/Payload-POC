@@ -1,0 +1,16 @@
+import type { CollectionConfig } from 'payload'
+
+export const Assets: CollectionConfig = {
+  slug: 'asset',
+  access: {
+    read: () => true,
+  },
+  fields: [
+    {
+      name: 'original_filename',
+      type: 'text',
+      required: true,
+    },
+  ],
+  upload: true,
+}
